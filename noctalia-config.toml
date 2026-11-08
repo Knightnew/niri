@@ -1,0 +1,465 @@
+[audio]
+enable_overdrive = true
+
+[backdrop]
+blur_intensity = 0.0
+tint_intensity = 0.0
+
+[bar.default]
+background_opacity = 0.59999998658895493
+capsule_opacity = 0.4999999888241291
+capsule_radius = 8
+center = [ "clock", "date", "weather", "current" ]
+concave_edge_corners = false
+end = [
+    "media",
+    "widget",
+    "tray",
+    "soundcore",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "session"
+]
+font_weight = 600
+margin_ends = 0
+padding = 8
+radius = 0
+show_on_workspace_switch = false
+start = [ "workspaces", "cat", "active_window" ]
+widget_spacing = 8
+
+[battery]
+warning_threshold = 30
+
+[calendar]
+enabled = true
+refresh_minutes = 30
+
+    [calendar.account.ameertolentino01]
+    name = "Ameer (Google)"
+    type = "google"
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "caffeine"
+
+[[control_center.shortcuts]]
+type = "nightlight"
+
+[[control_center.shortcuts]]
+type = "dark_mode"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[desktop_widgets]
+enabled = false
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 64
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[idle]
+behavior_order = [ "lock", "screen-off", "Lock & Suspend" ]
+
+    [idle.behavior."Lock & Suspend"]
+    action = "command"
+    command = "noctalia msg session lock && systemctl suspend"
+    enabled = true
+    timeout = 900.0
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
+
+[location]
+auto_locate = true
+latitude = 14.5243
+longitude = 121.0792
+
+[lockscreen_widgets]
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@winit", "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 800.0
+    cy = 718.0
+    output = "HDMI-A-1"
+    placement_height = 900.0
+    placement_width = 1600.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@winit"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 477.0
+    cy = 856.0
+    output = "winit"
+    placement_height = 1038.0
+    placement_width = 954.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@winit".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[nightlight]
+enabled = true
+temperature_day = 6600
+temperature_night = 4900
+
+[notification]
+background_opacity = 0.59999998658895493
+border = false
+history_retention_hours = 24
+layer = "overlay"
+position = "bottom_right"
+
+    [notification.filter.silence-niri-capture]
+    enabled = true
+    match_content = "Screenshot captured"
+    play_sound = false
+    save_history = false
+    show_toast = false
+
+[osd]
+background_opacity = 0.59999998658895493
+border = false
+position = "bottom_center"
+position_vertical = "bottom_center"
+
+[plugin_settings."ashur-d/wallpaper-widget"]
+close_on_apply = true
+notify_on_change = false
+wallpaper_dir = "/home/meeru/Pictures/Wallpapers"
+
+[plugin_settings."avivbintangaringga/nextboot-selector"]
+panel_open_near_click = false
+
+[plugin_settings."dotnetrob/cat"]
+panel_open_near_click = false
+
+[plugin_settings."elijaharch/wl-screen-mirror"]
+controls_open_near_click = false
+
+[plugin_settings."fel/quill"]
+ai_backend = "off"
+
+[plugin_settings."kenn/keybind-cheatsheet"]
+compositor = "niri"
+
+[plugin_settings."notoxus/media-island"]
+island_placement = "attached"
+
+[plugin_settings."raycursive/niri-displays"]
+panel_open_near_click = false
+
+[plugin_settings."sankity/soundcore-buds"]
+panel_open_near_click = false
+panel_position = "auto"
+
+[plugin_settings."thaer99ob/default-apps"]
+manager_placement = "attached"
+
+[plugin_settings."whyoolw/dropwall"]
+notify_on_set = false
+
+[plugin_settings."yuuto/arch-updater"]
+aur_helper = "yay"
+auto_check_hours = 1
+notify_on_updates = false
+panel_open_near_click = false
+show_activity_graph = true
+terminal = "alacritty"
+update_cmd = "shelly"
+
+[plugins]
+enabled = [
+    "dotnetrob/cat",
+    "yuuto/arch-updater",
+    "elijaharch/wl-screen-mirror",
+    "ashur-d/wallpaper-widget",
+    "whyoolw/dropwall",
+    "sankity/soundcore-buds",
+    "alexander/screen-toolkit"
+]
+
+[shell]
+app_icon_color = "primary"
+avatar_path = "/home/meeru/Pictures/Profile/416fa31b4686d0a84649638e473c3c75.jpg"
+button_borders = false
+card_borders = false
+corner_radius_scale = 0.5000000074505806
+font_family = "JetBrainsMono Nerd Font"
+input_borders = false
+niri_overview_close_on_launch_enabled = true
+niri_overview_type_to_launch_enabled = true
+panel_anchor_bar = "default"
+polkit_agent = true
+popup_borders = false
+screen_time_enabled = true
+
+    [shell.animation]
+    speed = 2.0000000298023224
+
+    [shell.launcher]
+    category_icons_only = true
+    compact = true
+    default_view = "all"
+    fetch_exchange_rates = false
+    layout = "simple"
+    search_position = "top"
+    show_session_button = false
+    show_settings_button = false
+    sort_by_usage = false
+    track_usage = false
+
+        [shell.launcher.providers.windows]
+        global = false
+
+    [shell.panel]
+    borders = false
+    transparency_mode = "soft"
+    wallpaper_show_names = false
+
+    [shell.screenshot]
+    annotate = true
+    directory = "/home/meeru/Pictures/Screenshots"
+
+    [shell.session]
+    grid_columns = 5
+
+        [[shell.session.actions]]
+        action = "lock"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "l"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "lock_and_suspend"
+        command = "noctalia msg session lock && systemctl suspend"
+        countdown_seconds = 0.0
+        enabled = true
+        glyph = "weather-moon"
+        label = "Suspend"
+        shortcut = "s"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "command"
+        command = "killall -9 noctalia; noctalia"
+        countdown_seconds = 0.0
+        enabled = false
+        glyph = "noctalia"
+        label = "Restart Shell"
+        shortcut = "n"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "reboot"
+        countdown_seconds = 0.0
+        enabled = true
+        glyph = "refresh"
+        label = "Restart"
+        shortcut = "r"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "logout"
+        countdown_seconds = 0.0
+        enabled = true
+        shortcut = "x"
+        variant = "default"
+
+        [[shell.session.actions]]
+        action = "shutdown"
+        countdown_seconds = 0.0
+        enabled = true
+        label = "Power Off"
+        shortcut = "p"
+        variant = "destructive"
+
+    [shell.shadow]
+    alpha = 0.34999999217689037
+
+    [shell.window_switcher]
+    mru = true
+    style = "compact"
+
+[theme]
+builtin = "Tokyo-Night"
+community_palette = "Catppuccin Mocha Blue"
+custom_palette = "noctalia-wallpaper-ts"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-tonal-spot"
+
+    [theme.templates]
+    builtin_ids = [ "alacritty", "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "niri", "qt" ]
+    community_ids = [ "brave-origin", "discord", "telegram", "prismlauncher", "fastfetch", "obs", "cosmic", "fzf" ]
+
+[wallpaper]
+directory = "/home/meeru/Pictures/Wallpapers"
+transition_duration = 1000
+transition_on_startup = true
+
+    [wallpaper.default]
+    path = "/home/meeru/Pictures/Wallpapers/wallhaven-9okl28.png"
+
+    [wallpaper.last]
+    path = "/home/meeru/Pictures/Wallpapers/wallhaven-9okl28.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/meeru/Pictures/Wallpapers/wallhaven-9okl28.png"
+
+    [[wallpaper.favorite]]
+    path = "/home/meeru/Pictures/Wallpapers/ddg_15_1788816512258034258.jpg"
+
+[widget.active_window]
+display = "text_only"
+
+[widget.audio_visualizer]
+width = 30
+
+[widget.brightness]
+show_label = false
+
+[widget.cat]
+type = "dotnetrob/cat:cat"
+
+[widget.control-center]
+enabled = false
+
+[widget.current]
+type = "thaer99ob/default-apps:current"
+
+[widget.date]
+format = "{:%a %b %d}"
+
+[widget.launcher]
+enabled = false
+
+[widget.media]
+hide_when_no_media = true
+max_length = 200
+rotate_album_art = true
+title_scroll = "on_hover"
+
+    [widget.media.actions]
+    scroll_down = "volume-down"
+    scroll_up = "volume-up"
+
+[widget.network]
+show_label = false
+
+[widget.soundcore]
+type = "sankity/soundcore-buds:soundcore"
+
+[widget.tray]
+drawer = true
+
+[widget.volume]
+show_label = false
+
+[widget.wallpaper]
+enabled = false
+
+[widget.weather]
+show_condition = false
+
+[widget.widget]
+hide_on_empty = true
+type = "yuuto/arch-updater:widget"
+
+[widget.workspaces]
+scale = 1.05
+style = "minimal"

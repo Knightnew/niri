@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/fastfetch-cli/fastfetch/2.66.0/doc/json_schema.json",
+  "logo": {
+    "type": "builtin",
+    "source": "arch_small",
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "bottom": 1
+    }
+  },
+  "display": {
+    "separator": "  "
+  },
+  "modules": [
+    "break",
+    {
+      "type": "title",
+      "key": "user     ",
+      "format": "{1}"
+    },
+    {
+      "type": "kernel",
+      "key": "kernel   "
+    },
+    {
+      "type": "os",
+      "key": "os       "
+    },
+    {
+//      "type": "initsystem",
+//      "key": "init     ",
+//      "format": "{1}"
+//    },
+//    {
+      "type": "shell",
+      "key": "shell    "  
+    },
+    {
+      "type": "command",
+      "key": "wm       ",
+      "text": "echo $XDG_CURRENT_DESKTOP",
+      "format": "{1} (Wayland)"
+    },
+    {
+      "type": "packages",
+      "key": "pkgs     "
+    },
+    {
+      "type": "disk",
+      "key": "disk (/) "
+    },
+    {
+      "type": "memory",
+      "key": "memory   "
+//    },
+//    {
+//      "type": "uptime",
+//      "key": "uptime   " 
+    },
+    "break"
+  ]
+}

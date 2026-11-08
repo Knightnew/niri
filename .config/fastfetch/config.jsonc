@@ -28,11 +28,6 @@
       "key": "os       "
     },
     {
-//      "type": "initsystem",
-//      "key": "init     ",
-//      "format": "{1}"
-//    },
-//    {
       "type": "shell",
       "key": "shell    "  
     },
@@ -53,10 +48,6 @@
     {
       "type": "memory",
       "key": "memory   "
-//    },
-//    {
-//      "type": "uptime",
-//      "key": "uptime   " 
     },
     "break"
   ]

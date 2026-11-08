@@ -40,10 +40,6 @@ warning_threshold = 30
 enabled = true
 refresh_minutes = 30
 
-    [calendar.account.ameertolentino01]
-    name = "Ameer (Google)"
-    type = "google"
-
 [[control_center.shortcuts]]
 type = "wifi"
 
@@ -219,7 +215,7 @@ position_vertical = "bottom_center"
 [plugin_settings."ashur-d/wallpaper-widget"]
 close_on_apply = true
 notify_on_change = false
-wallpaper_dir = "/home/meeru/Pictures/Wallpapers"
+wallpaper_dir = "$HOME/Pictures/Wallpapers"
 
 [plugin_settings."avivbintangaringga/nextboot-selector"]
 panel_open_near_click = false
@@ -274,7 +270,7 @@ enabled = [
 
 [shell]
 app_icon_color = "primary"
-avatar_path = "/home/meeru/Pictures/Profile/416fa31b4686d0a84649638e473c3c75.jpg"
+avatar_path = "$HOME/Pictures/Profile/"
 button_borders = false
 card_borders = false
 corner_radius_scale = 0.5000000074505806
@@ -312,7 +308,7 @@ screen_time_enabled = true
 
     [shell.screenshot]
     annotate = true
-    directory = "/home/meeru/Pictures/Screenshots"
+    directory = "$HOME/Pictures/Screenshots"
 
     [shell.session]
     grid_columns = 5
@@ -388,21 +384,21 @@ wallpaper_scheme = "m3-tonal-spot"
     community_ids = [ "brave-origin", "discord", "telegram", "prismlauncher", "fastfetch", "obs", "cosmic", "fzf" ]
 
 [wallpaper]
-directory = "/home/meeru/Pictures/Wallpapers"
+directory = "$HOME/Pictures/Wallpapers"
 transition_duration = 1000
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/meeru/Pictures/Wallpapers/wallhaven-9okl28.png"
+    path = "$HOME/Pictures/Wallpapers/wallhaven-9okl28.png"
 
     [wallpaper.last]
-    path = "/home/meeru/Pictures/Wallpapers/wallhaven-9okl28.png"
+    path = "$HOME/Pictures/Wallpapers/wallhaven-9okl28.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/meeru/Pictures/Wallpapers/wallhaven-9okl28.png"
+    path = "$HOME/Pictures/Wallpapers/wallhaven-9okl28.png"
 
     [[wallpaper.favorite]]
-    path = "/home/meeru/Pictures/Wallpapers/ddg_15_1788816512258034258.jpg"
+    path = "$HOME/Pictures/Wallpapers/"
 
 [widget.active_window]
 display = "text_only"

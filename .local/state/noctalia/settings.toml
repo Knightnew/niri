@@ -215,7 +215,7 @@ position_vertical = "bottom_center"
 [plugin_settings."ashur-d/wallpaper-widget"]
 close_on_apply = true
 notify_on_change = false
-wallpaper_dir = "$HOME/Pictures/Wallpapers"
+wallpaper_dir = "~/Pictures/Wallpapers"
 
 [plugin_settings."avivbintangaringga/nextboot-selector"]
 panel_open_near_click = false
@@ -270,7 +270,7 @@ enabled = [
 
 [shell]
 app_icon_color = "primary"
-avatar_path = "$HOME/Pictures/Profile/"
+avatar_path = "~/Pictures/Profile/"
 button_borders = false
 card_borders = false
 corner_radius_scale = 0.5000000074505806
@@ -308,7 +308,7 @@ screen_time_enabled = true
 
     [shell.screenshot]
     annotate = true
-    directory = "$HOME/Pictures/Screenshots"
+    directory = "~/Pictures/Screenshots"
 
     [shell.session]
     grid_columns = 5
@@ -384,21 +384,21 @@ wallpaper_scheme = "m3-tonal-spot"
     community_ids = [ "brave-origin", "discord", "telegram", "prismlauncher", "fastfetch", "obs", "cosmic", "fzf" ]
 
 [wallpaper]
-directory = "$HOME/Pictures/Wallpapers"
+directory = "~/Pictures/Wallpapers"
 transition_duration = 1000
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "$HOME/Pictures/Wallpapers/wallhaven-9okl28.png"
+    path = "~/Pictures/Wallpapers/wallhaven-9okl28.png"
 
     [wallpaper.last]
-    path = "$HOME/Pictures/Wallpapers/wallhaven-9okl28.png"
+    path = "~/Pictures/Wallpapers/wallhaven-9okl28.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "$HOME/Pictures/Wallpapers/wallhaven-9okl28.png"
+    path = "~/Pictures/Wallpapers/wallhaven-9okl28.png"
 
     [[wallpaper.favorite]]
-    path = "$HOME/Pictures/Wallpapers/"
+    path = "~/Pictures/Wallpapers/"
 
 [widget.active_window]
 display = "text_only"
